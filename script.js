@@ -1,7 +1,7 @@
 let humanChoice;
 let computerChoice;
 
-function getComputeChoice(){
+function getComputerChoice(){
     computerChoice = Math.floor((Math.random) * 3);
 
     if(computerChoice == 1){
@@ -11,11 +11,29 @@ function getComputeChoice(){
         return "paper";
     }
     else{
-        return "scissors"
+        return "scissors";
     }
 
 }
 
 function getHumanChoice(){
-    humanChoice = prompt("Your choice here: ")
+    humanChoice = prompt("Your choice here: ");
+
+    return humanChoice;
+}
+
+let computer = getComputerChoice();
+let human = getHumanChoice();
+
+function gameRound(compute,human){
+    if (human == "rock" && computer == "scissors"
+    || human == "scissors" && computer == "paper"
+    || human == "paper" && computer == "rock"){
+        return "You win";
+    }
+    
+    else if(human == computer){
+        human
+    }
+
 }
