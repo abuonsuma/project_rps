@@ -15,3 +15,7 @@ function getComputeChoice(){
     }
 
 }
+
+function getHumanChoice(){
+    humanChoice = prompt("Your choice here: ")
+}
