@@ -1,8 +1,6 @@
 let humanChoice;
 let computerChoice;
 
-console.log(humanChoice)
-
 function getComputerChoice(){
     computerChoice = Math.floor((Math.random) * 3);
     console.log(computerChoice);
@@ -71,7 +69,8 @@ function playGame(){
 
         console.log(`Your score: ${humanScore}, Computer score: ${computerScore}`)
     }
-
+ 
     gameRound()
 }
 
+playGame()
