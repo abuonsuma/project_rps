@@ -71,5 +71,7 @@ function playGame(){
 
         console.log(`Your score: ${humanScore}, Computer score: ${computerScore}`)
     }
+
+    gameRound()
 }
 
