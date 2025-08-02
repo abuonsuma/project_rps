@@ -50,3 +50,26 @@ function playRound(computer,human){
         // return "Computer win"
     }
 }
+
+function playGame(){
+    let humanScore = 0;
+    let computerScore = 0;
+
+    function gameRound(){
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        let result = playRound(humanSelection, computerSelection);
+
+        if (result === "human"){
+            humanScore++;
+
+        }
+        else if(result === "computer"){
+            computerScore++;
+        }
+
+        console.log(`Your score: ${humanScore}, Computer score: ${computerScore}`)
+    }
+}
+
