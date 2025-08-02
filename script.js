@@ -1,10 +1,15 @@
 let humanChoice;
 let computerChoice;
 
+console.log(humanChoice)
+
 function getComputerChoice(){
     computerChoice = Math.floor((Math.random) * 3);
+    console.log(computerChoice);
 
+    
     if(computerChoice == 1){
+        console.log(computerChoice)
         return "rock";
     }
     else if(computerChoice == 2){
@@ -13,7 +18,6 @@ function getComputerChoice(){
     else{
         return "scissors";
     }
-
 }
 
 function getHumanChoice(){
@@ -22,18 +26,27 @@ function getHumanChoice(){
     return humanChoice;
 }
 
-let computer = getComputerChoice();
-let human = getHumanChoice();
+// let computer = getComputerChoice();
+// let human = getHumanChoice();
 
-function gameRound(compute,human){
+function playRound(computer,human){
     if (human == "rock" && computer == "scissors"
     || human == "scissors" && computer == "paper"
     || human == "paper" && computer == "rock"){
-        return "You win";
+        console.log("You win");
+        // alert("You win");
+        // return "You win";
     }
     
     else if(human == computer){
-        human
+        console.log("Tie");
+        // alert("Tie");
+        // return "Tie"
     }
 
+    else{
+        console.log("Computer win");
+        // alert("Computer win");
+        // return "Computer win"
+    }
 }
