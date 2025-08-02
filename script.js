@@ -35,7 +35,7 @@ function playRound(computer,human){
     || human == "paper" && computer == "rock"){
         console.log("You win");
         // alert("You win");
-        // return "You win";
+        return "human";
     }
     
     else if(human == computer){
@@ -47,7 +47,7 @@ function playRound(computer,human){
     else{
         console.log("Computer win");
         // alert("Computer win");
-        // return "Computer win"
+        return "computer"
     }
 }
 
